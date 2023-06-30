@@ -1,0 +1,61 @@
+1. Install TestNG
+2. Create a TestNG Project
+3. Create 2 test classes (with 3 test cases each).
+4. Keep the 2 test classes in 2 different <test> tags in testng.xml
+5. Execute the tests above using testng.xml
+
+Output:
+
+Test Class 1 - Test case 1
+Test Class 1 - Test case 2
+Test Class 1 - Test case 3
+Test Class 2 - Test case 1
+Test Class 2 - Test case 2
+Test Class 2 - Test case 3
+
+===============================================
+Suite
+Total tests run: 6, Passes: 6, Failures: 0, Skips: 0
+===============================================
+
+
+Process finished with exit code 0
+
+6. Assign a group to a few test cases and update testng.xml to run test cases
+   belonging to the group.
+
+Output -
+
+Test Class 1 - Test case 1
+Test Class 1 - Test case 2
+Test Class 2 - Test case 1
+Test Class 2 - Test case 2
+
+===============================================
+Suite
+Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
+===============================================
+
+
+Process finished with exit code 0
+
+
+7. Assign priority to the test cases.
+
+Order changes according to set priority
+Output -
+Test Class 1 - Test case 2
+Test Class 1 - Test case 1
+Test Class 2 - Test case 1
+Test Class 2 - Test case 2
+
+===============================================
+Suite
+Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
+===============================================
+
+
+Process finished with exit code 0
+
+
+

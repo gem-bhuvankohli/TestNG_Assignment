@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Test Suite-->
+<suite name="Suite">
+
+    <!--    Running TestClass1(3 test-cases) and TestClass2(3 test-cases) test cases separately
+                    with 2 test tags-->
+    <!--  Test 1 running TestClass1 test cases  -->
+
+    <!--    <test name="Test 1">-->
+    <!--        <classes>-->
+    <!--            <class name="TestNG.TestClass1"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--  Test 2 running TestClass2 test cases  -->
+
+    <!--    <test name="Test 2">-->
+    <!--        <classes>-->
+    <!--            <class name="TestNG.TestClass2"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    Running Group Tests -->
+    <!--    <test name="Group Test">-->
+    <!--        <groups>-->
+    <!--Running test-cases with group name annotation "Group1"-->
+    <!--            <run>-->
+    <!--                <include name="Group1"></include>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="TestNG.TestClass1"></class>-->
+    <!--            <class name="TestNG.TestClass2"></class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    -->
+
+    <!--Running Group Tests after setting priority-->
+    <test name="Group Test">
+        <groups>
+            <!--Running test-cases with group name annotation "Group1"-->
+            <run>
+                <include name="Group1"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNG.TestClass1"></class>
+            <class name="TestNG.TestClass2"></class>
+        </classes>
+    </test>
+</suite>
